@@ -1,5 +1,5 @@
 
-    bench init --skip-redis-config-generation --frappe-branch version-14 frappe-bench
+    bench init --skip-redis-config-generation --frappe-branch develop frappe-bench
     cd frappe-bench
 
     bench set-config -g db_host mariadb
@@ -12,7 +12,7 @@
     bench --site revolutech.localhost set-config developer_mode 1
     bench --site revolutech.localhost clear-cache   
     
-    bench get-app --branch version-14 --resolve-deps erpnext
+    bench get-app --branch develop --resolve-deps erpnext
     bench --site revolutech.localhost install-app erpnext
     
     
